@@ -41,7 +41,7 @@ int main(int argc, char **argv)
     test_camera_class_image();
 
     test_transforms();
-    // test_xformed_camera_image();
+    test_xformed_camera_image();
 
     // test_ray_sphere_intersection();
     // test_sphere_image();

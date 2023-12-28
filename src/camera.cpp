@@ -45,5 +45,5 @@ Ray3f Camera::generate_ray(const Vec2f &pixel) const
             -m_size.y*pixel.y/m_resolution.y+m_size.y/2.0,
             -m_focal_distance);
     
-    return Ray3f(ray_org, ray_dir);
+    return m_xform.ray(Ray3f(ray_org, ray_dir));
 }
